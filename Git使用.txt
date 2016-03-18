@@ -1,0 +1,19 @@
+1.初始化一个repository
+git init
+2.添加要上传的文件
+git add <文件或文件夹>
+3.查看本地的git状态，将新增加的文件add到git中,将新删除的文件用git命令移除 git add/rm <文件名>，文件夹 git rm -fr <文件夹名>
+git status
+4.提交到本地git缓存中
+git commit -m "this is my First git commit"
+5.提交到远程服务器
+5.1 添加本地资源与远程repository之间的关联
+git remote add origin https://github.com/xiaoxinwt/<git资源名>.git
+eg:
+git remote add origin https://github.com/xiaoxinwt/Docker-.git
+5.2 将本地的修改推送到远程服务器上的master主干或其他分支上
+git push -u origin master
+
+6. 将本地一个已经存在的资源提交到远程服务器上的某个repository上
+6.1 git remote add origin https://github.com/xiaoxinwt/<git资源名>.git
+6.2 git push -u origin master
